@@ -18,6 +18,7 @@ abstract class ViewBindingActivity<VB: ViewBinding> : AppCompatActivity() {
         _binding = bindingInflater.invoke(layoutInflater)
         setContentView(_binding!!.root)
 
+        setup()
     }
 
     abstract fun setup()

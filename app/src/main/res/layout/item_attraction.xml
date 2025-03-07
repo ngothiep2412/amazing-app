@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8dp"
+    app:cardCornerRadius="@dimen/_24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_attraction"
+        android:gravity="end|center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/_12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_70dp"
+                android:layout_height="@dimen/_70dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:background="@drawable/bg_location" />
+
+            <TextView
+                android:id="@+id/tvAttractionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semi_bold"
+                android:text="Name: Unknown"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="bold" />
+
+            <!-- Icon khóa hiển thị khi chưa mở khóa -->
+            <ImageView
+                android:id="@+id/ivLockIcon"
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_10dp"
+                android:src="@drawable/ic_lock"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnStartQuiz"
+            android:layout_width="@dimen/_120dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_4dp"
+            android:backgroundTint="@color/white"
+            android:enabled="false"
+            android:fontFamily="@font/inter_semi_bold"
+            android:gravity="center"
+            android:text="Start Quiz"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

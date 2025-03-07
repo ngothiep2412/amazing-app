@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150dp"
+    android:layout_marginHorizontal="@dimen/_2dp"
+    android:layout_marginBottom="@dimen/_8dp"
+    app:cardCornerRadius="@dimen/_4dp"
+    app:cardElevation="@dimen/_2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10dp">
+
+        <ImageView
+            android:id="@+id/newsImage"
+            android:layout_width="@dimen/_140dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/newsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="Tiêu đề tin tức"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/newsDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/inter_regular"
+                android:maxLines="2"
+                android:text="Mô tả ngắn về tin tức..."
+                android:textSize="@dimen/_14sp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/newsDate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_4dp"-->
+<!--                android:fontFamily="@font/inter_medium"-->
+<!--                android:text="14/03/2025"-->
+<!--                android:textColor="#757575"-->
+<!--                android:textSize="@dimen/_12sp"-->
+<!--                android:textStyle="bold" />-->
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
