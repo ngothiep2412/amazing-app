@@ -1,0 +1,72 @@
+[versions]
+agp = "8.7.3"
+kotlin = "1.9.24"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+androidxLifecycle = "2.8.0"
+androidxLivedataKtx = "2.8.0"
+androidxActivityKtx = "1.9.0"
+timber = "5.0.1"
+navigationFragmentKtx = "2.8.8"
+navigationUiKtx = "2.8.8"
+draggleHilt = "2.51.1"
+okhttp = "4.12.0"
+koin = "3.5.3"
+preferenceKtxKtx = "1.2.1"
+glide = "4.10.0"
+serialization = "1.6.0"
+perf = "1.4.2"
+kotlinSerialization = "1.9.22"
+ktor = "2.3.10"
+okhttpLoggingInterceptor = "4.12.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+androidx-preference-ktx-ktx = { module = "androidx.preference:preference-ktx", version.ref = "preferenceKtxKtx" }
+glide = {group = "com.github.bumptech.glide", name = "glide", version.ref = "glide"}
+
+
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
+okhttp3-okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+kotlinxSerialization = {group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref="serialization"}
+
+ktorAndroid = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor" }
+ktorCore = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktorUtils = { group = "io.ktor", name = "ktor-utils", version.ref = "ktor" }
+
+okhttp-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttpLoggingInterceptor" }
+
+
+androidxLifecycleProcess = { group = "androidx.lifecycle", name = "lifecycle-process", version.ref = "androidxLifecycle" }
+androidxLifecycleRuntimeKtx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+androidxLifecycleViewmodelSavedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "androidxLifecycle" }
+androidxLivedataKtx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "androidxLivedataKtx" }
+androidxActivityKtx = { group = "androidx.activity", name = "activity-ktx", version.ref = "androidxActivityKtx" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+
+dragger-hilt = {group = "com.google.dagger", name = "hilt-android", version.ref = "draggleHilt"}
+koin = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+
+
+
+[plugins]
+kotlinxSerialization = {id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinSerialization"}
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+perf = { id = "com.google.firebase.firebase-perf", version.ref = "perf" }
+
