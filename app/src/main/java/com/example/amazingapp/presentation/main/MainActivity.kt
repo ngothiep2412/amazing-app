@@ -30,7 +30,6 @@ class MainActivity : ViewBindingActivity<ActivityMainBinding>() {
         viewModel.loadDataNews()
         viewModel.loadDataLocation()
 
-
         binding.newsRecyclerView.adapter = newsAdapter
         binding.locationsRecyclerView.adapter = locationsAdapter
 
@@ -40,7 +39,6 @@ class MainActivity : ViewBindingActivity<ActivityMainBinding>() {
 
                 is MainViewEvent.OnDataNewSuccess -> {
                     newsAdapter.updateData(it.news)
-
                 }
 
                 is MainViewEvent.OnDataLocationSuccess -> {
