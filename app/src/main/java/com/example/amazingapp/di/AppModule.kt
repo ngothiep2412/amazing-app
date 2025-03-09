@@ -18,6 +18,7 @@ val appModule = module {
             default = Dispatchers.Default
         )
     }
+    
     single<AmazingApp> { AmazingApp() }
     viewModel { MainViewModel(get()) }
 }
